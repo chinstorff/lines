@@ -12,7 +12,8 @@ end
 def run_lines (lines)
   response = []
   lines.each_with_index do |line, i|
-    prompt = "#{i}  "
+    number = "0#{i}"[-2..-1]
+    prompt = "#{number}  "
     
     print prompt.white + line.white
     print prompt
