@@ -14,7 +14,7 @@ def run_lines (lines)
   lines.each_with_index do |line, i|
     prompt = "#{i}  "
     
-    print prompt.red + line.red
+    print prompt.white + line.white
     print prompt
     response.push $stdin.gets.chomp
   end
